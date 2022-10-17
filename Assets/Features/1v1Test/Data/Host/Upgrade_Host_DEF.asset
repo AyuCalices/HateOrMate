@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e7af2a1df76ac049b53758d250e40fb, type: 3}
+  m_Name: Upgrade_Host_DEF
+  m_EditorClassIdentifier: 
+  currency: {fileID: 11400000, guid: 6be32d1c6047fbe449ca6894ba776941, type: 2}
+  initialMoneyCost: {fileID: 11400000, guid: 5772d4ad9a472124eb7d54946eb86141, type: 2}
+  scalingMoneyCost: {fileID: 11400000, guid: 60d891e22ad92764186288a8416abddf, type: 2}
+  upgrades:
+  - stat: {fileID: 11400000, guid: d4f26e3d78fc81c4ebd7b75df5306e74, type: 2}
+    upgradeAmount: 1

@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7abe32ad68c414b4b86ec2f9a66932e5, type: 3}
+  m_Name: Clicker Manager
+  m_EditorClassIdentifier: 
+  GUIDContainer:
+    _serializedGuid: 06672ccc-75e9-4078-b667-9779ea10e38e
+  SaveSettings:
+    SaveType: 0
+    SaveName: save
+    SavePath: 
+  Config:
+    Currencies:
+    - {fileID: 11400000, guid: e40fffd225b8ae941aa75c10ddcb1edf, type: 2}
+    Clickables:
+    - {fileID: 11400000, guid: 5a41d4979ccf79f49a906d39f1a33fd9, type: 2}
+    AvailableBuildings:
+    - {fileID: 11400000, guid: 84d55a386d4765b49871eb4a56267697, type: 2}
+    AvailableUpgrades:
+    - {fileID: 11400000, guid: def60eb8fd4a74340a563b364252409f, type: 2}
+    BuildingCostIncrease: 0.15
+  State:
+    _earnedBuildings: []
+    _earnedBuildingsCount: 
+    _earnedUpgrades: []
+    _currencies:
+    - _serializedGuid: 99cef42a-073a-4523-8d03-3dae47a6a645
+    _currencyCurrentTotals:
+    - 0
+    _currencyHistoricalTotals:
+    - 0
+  OnTick:
+    m_PersistentCalls:
+      m_Calls: []
+  OnBuyUpgrade:
+    m_PersistentCalls:
+      m_Calls: []
+  OnBuyBuilding:
+    m_PersistentCalls:
+      m_Calls: []

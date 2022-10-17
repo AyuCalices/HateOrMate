@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec26a2dd75b5a345a3a1c3014f7fc89, type: 3}
+  m_Name: Clicker Component
+  m_EditorClassIdentifier: 
+  targetUnit: {fileID: 11400000, guid: 27b9cfebeb215244d809d01d29aba887, type: 2}
+  attackerUnits:
+  - {fileID: 11400000, guid: f35cabc1f84485344a3aa182e6f605bd, type: 2}
+  - {fileID: 11400000, guid: 244f975a1971f78478547f0da3815879, type: 2}
+  baseClickerDamage: 1

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 933e557b6b9d3204fb37681c5cae0ba5, type: 3}
+  m_Name: Guest
+  m_EditorClassIdentifier: 
+  name: Guest
+  attackTime: 5
+  entityType: 0
+  atk: {fileID: 11400000, guid: 2e16c03e100e9444ba4764a526b8d813, type: 2}
+  def: {fileID: 11400000, guid: 53820c104a0c6b94e969049e899a85e8, type: 2}
+  totalHealth: {fileID: 11400000, guid: 81ded8896cf63a5448f5231f0e6bc189, type: 2}
+  currentHealth: {fileID: 11400000, guid: b93a69f6be47f5d4abee5f95e44023b7, type: 2}
+  totalStamina: {fileID: 11400000, guid: 8ed42fddf42868449bde0bd352deca06, type: 2}
+  currentStamina: {fileID: 11400000, guid: 2fd72656aed833e4bb00bfeade0b4597, type: 2}
+  staminaRefreshTime: 1

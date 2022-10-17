@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 237578f9ba4a78f4ea6bfd1a8c3fcbb4, type: 3}
+  m_Name: Enemy Scaling Stats
+  m_EditorClassIdentifier: 
+  stats:
+  - stat: {fileID: 11400000, guid: 1951ce65c28c6c149a73fd06dca31476, type: 2}
+    valueIncrease: 1.5
+  - stat: {fileID: 11400000, guid: 8e46e901c9dfabd4d9be58545a4eebd0, type: 2}
+    valueIncrease: 0.5
+  - stat: {fileID: 11400000, guid: 88286953f7a262d4988e81d96a522950, type: 2}
+    valueIncrease: 4
