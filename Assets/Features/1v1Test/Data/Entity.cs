@@ -10,7 +10,6 @@ public class Entity : ScriptableObject
     public string name;
     //stats
     public float attackTime;
-    public EntityType entityType;
     public FloatVariable atk;
     public FloatVariable def;
     public FloatVariable totalHealth;
@@ -18,10 +17,4 @@ public class Entity : ScriptableObject
     public IntVariable totalStamina;
     public IntVariable currentStamina;
     public float staminaRefreshTime;
-}
-
-public enum EntityType
-{
-    Player,
-    Enemy
 }

@@ -111,7 +111,7 @@ public class BattleManager : MonoBehaviour
                 
                 if (!(unit.attackDeltaTime <= 0)) continue;
                 
-                Attack(unit.entity);
+                Attack(unit);
                 unit.attackDeltaTime = unit.entity.attackTime;
             }
             else
@@ -126,15 +126,15 @@ public class BattleManager : MonoBehaviour
         text.text = message + currency;
     }
 
-    private void Attack(Entity attacker)
+    private void Attack(Unit attacker)
     {
-        switch (attacker.entityType)
+        switch (attacker.entityType.type)
         {
             case EntityType.Player:
-                DealDamage(EntityType.Enemy, attacker);
+                DealDamage(EntityType.Enemy, attacker.entity);
                 break;
             case EntityType.Enemy:
-                DealDamage(EntityType.Player, attacker);
+                DealDamage(EntityType.Player, attacker.entity);
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
@@ -143,8 +143,8 @@ public class BattleManager : MonoBehaviour
 
     public void Click()
     {
-        DealClickerDamage(clickerComponent.targetUnit.entityType, clickerComponent.attackerUnits[0], clickerComponent.baseClickerDamage);
-        DealClickerDamage(clickerComponent.targetUnit.entityType, clickerComponent.attackerUnits[1], clickerComponent.baseClickerDamage);
+        DealClickerDamage(EntityType.Player, clickerComponent.attackerUnits[0], clickerComponent.baseClickerDamage);
+        DealClickerDamage(EntityType.Player, clickerComponent.attackerUnits[1], clickerComponent.baseClickerDamage);
     }
 
     private void DealClickerDamage(EntityType entityType, Entity entity, float clickerBaseDamage)
@@ -155,7 +155,7 @@ public class BattleManager : MonoBehaviour
         }
         entity.currentStamina.Set(entity.currentStamina.Get() - 1);
         
-        List<Unit> attackedUnits = units.FindAll(x => x.entity.entityType == entityType);
+        List<Unit> attackedUnits = units.FindAll(x => x.entityType.type == entityType);
 
         if (attackedUnits.Exists(x => x.entity.currentHealth.Get() - clickerBaseDamage > 0))
         {
@@ -180,7 +180,7 @@ public class BattleManager : MonoBehaviour
 
     private void DealDamage(EntityType entityType, Entity entity)
     {
-        List<Unit> attackedUnits = units.FindAll(x => x.entity.entityType == entityType);
+        List<Unit> attackedUnits = units.FindAll(x => x.entityType.type == entityType);
 
         if (attackedUnits.Exists(x => x.entity.currentHealth.Get() - (entity.atk.Get() - x.entity.def.Get()) > 0))
         {
@@ -242,6 +242,7 @@ public class BattleManager : MonoBehaviour
 public class Unit
 {
     public Entity entity;
+    public EntityType_SO entityType;
     public float attackDeltaTime;
     public Slider attackSlider;
     public Slider healthSlider;
