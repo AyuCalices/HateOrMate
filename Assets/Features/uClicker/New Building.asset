@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: New Building
   m_EditorClassIdentifier: 
   GUIDContainer:
-    _serializedGuid: e364e689-2eed-4467-a3a1-f3e871d4f8a1
+    _serializedGuid: c4eed1ee-93b7-4f6d-93c9-4b264798d7c9
   Unlocked: 1
   RequirementGroups: []
   Cost:

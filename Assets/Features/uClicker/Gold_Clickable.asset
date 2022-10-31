@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Gold_Clickable
   m_EditorClassIdentifier: 
   GUIDContainer:
-    _serializedGuid: 9f325277-e98d-40cb-bfd6-a4d59e5b5797
+    _serializedGuid: 5d0cc54f-6f70-42ad-b613-a0bbd3d36a0d
   Currency: {fileID: 11400000, guid: e40fffd225b8ae941aa75c10ddcb1edf, type: 2}
   Amount: 5

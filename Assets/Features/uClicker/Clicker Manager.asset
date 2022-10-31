@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Clicker Manager
   m_EditorClassIdentifier: 
   GUIDContainer:
-    _serializedGuid: e267e24f-02f5-4a94-976e-15344187f649
+    _serializedGuid: 06672ccc-75e9-4078-b667-9779ea10e38e
   SaveSettings:
     SaveType: 0
     SaveName: save
@@ -33,7 +33,7 @@ MonoBehaviour:
     _earnedBuildingsCount: 
     _earnedUpgrades: []
     _currencies:
-    - _serializedGuid: 31f605e4-9120-4e50-80a1-6833c3b6cc10
+    - _serializedGuid: 99cef42a-073a-4523-8d03-3dae47a6a645
     _currencyCurrentTotals:
     - 0
     _currencyHistoricalTotals:

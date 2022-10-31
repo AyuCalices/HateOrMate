@@ -181,12 +181,13 @@ public class BattleManager : MonoBehaviour
     private void DealDamage(EntityType entityType, Entity entity)
     {
         List<Unit> attackedUnits = units.FindAll(x => x.entityType.type == entityType);
+        Debug.Log(attackedUnits.Count + " " + attackedUnits[0].entityType.type);
 
         if (attackedUnits.Exists(x => x.entity.currentHealth.Get() - (entity.atk.Get() - x.entity.def.Get()) > 0))
         {
             foreach (var attackedUnit in attackedUnits)
             {
-                float damage = Mathf.Max(0, entity.atk.Get() - attackedUnit.entity.def.Get());
+                float damage = Mathf.Max(1, entity.atk.Get() - attackedUnit.entity.def.Get());
                 attackedUnit.entity.currentHealth.Set(attackedUnit.entity.currentHealth.Get() - damage);
                 attackedUnit.healthSlider.value = attackedUnit.entity.currentHealth.Get() / attackedUnit.entity.totalHealth.Get();
             }
